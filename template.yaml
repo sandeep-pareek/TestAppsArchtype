@@ -1,0 +1,33 @@
+apiVersion: backstage.io/v1alpha1
+kind: Template
+metadata:
+  name: spring-template
+  title: Schneider Spring Test Service
+  description: Create a simple test microservice Spring and Java
+  tags:
+    - java
+    - sni
+    - test-service
+spec:
+  owner: service@example.com
+  templater: cookiecutter
+  type: service
+  path: '.'
+  schema:
+    required:
+      - service_name
+      - group_name
+      - project_description
+    properties:
+      service_name:
+        title: Name
+        type: string
+        description: Unique name of the component/service
+      group_name:
+        title: Group Name
+        type: string
+        description: group name of the service
+      project_description:
+        title: Project Description
+        type: string
+        description: The port to run the service on
