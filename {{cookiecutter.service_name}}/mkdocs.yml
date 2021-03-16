@@ -1,0 +1,8 @@
+site_name: {{cookiecutter.service_name | jsonify}}
+site_description: {{cookiecutter.project_description | jsonify}}
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
