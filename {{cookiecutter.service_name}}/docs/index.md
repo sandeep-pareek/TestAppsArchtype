@@ -1,6 +1,6 @@
 ## {{ cookiecutter.service_name }}
 
-{{ cookiecutter.description }}
+{{ cookiecutter.project_description }}
 
 ## Getting started
 
